@@ -52,7 +52,7 @@
     "@storybook/addon-interactions": "^7.6.5",
     "@storybook/addon-links": "^7.6.5",
     "@storybook/addon-onboarding": "^1.0.10",
-    "@storybook/addon-themes": "^7.6.5",
+    "@storybook/addon-themes": "^7.6.7",
     "@storybook/blocks": "^7.6.5",
     "@storybook/preset-create-react-app": "^7.6.5",
     "@storybook/react": "^7.6.5",
@@ -61,7 +61,7 @@
     "@types/storybook__react": "^5.2.1",
     "eslint-plugin-storybook": "^0.6.15",
     "prop-types": "^15.8.1",
-    "storybook": "^7.6.5",
+    "storybook": "^7.6.7",
     "webpack": "^5.89.0"
   }
 }
