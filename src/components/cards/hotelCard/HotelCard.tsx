@@ -5,10 +5,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
 function HotelCard({originalRoomPrice, discount, finalPrice, cityName, hotelName, hotelStarRating, title, description, roomPhotoUrl}) {
+
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 250}}>
     <CardMedia
-      sx={{ height: 140 }}
+      sx={{ height: 120 }}
       image={roomPhotoUrl}
       title={title}
     />
@@ -16,12 +17,15 @@ function HotelCard({originalRoomPrice, discount, finalPrice, cityName, hotelName
       <Typography gutterBottom variant="h5" component="p">
       {hotelName}
       </Typography>
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body1" color="text.secondary">
         {cityName}
       </Typography>
-      {/* <Typography variant="body2">
-        {``}
-      </Typography> */}
+      <Typography variant="body2" component="p">
+        {finalPrice}
+      </Typography>
+      <Typography variant="body2" component="p" sx={{textDecoration: 'line-through'}}>
+        {originalRoomPrice}
+      </Typography>
     </CardContent>
   </Card>
   )
